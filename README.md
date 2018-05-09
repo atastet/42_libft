@@ -1,19 +1,5 @@
 My implementation of some of the Standard C Library functions including some additional ones.
 
-SUMMARY
-What is libft?
-What's in it?
-Part 1
-Part 2
-Bonus part
-Personal Functions
-How does it work?
-How do I use the library?
-What is libft?
-Libft (fr) (en) is an individual project at 42 that requires us to re-create some standard C library functions including some additional ones that can be used later to build a library of useful functions for the rest of the program.
-
-Disclaimer: Reinventing the wheel is bad, 42 makes us do this just so we can have a deeper understanding of data structures and basic algorithms. At 42 we're not allowed to use some standard libraries on our projects, so we have to keep growing this library with our own functions as we go farther in the program.
-
 What's in it?
 As you can see from the Project instructions (french), there are 4 sections:
 
@@ -21,35 +7,6 @@ Libc Functions: Some of the standard C functions
 Additional functions: Functions 42 deems will be useful for later projects
 Bonus Functions: Functions 42 deems will be useful for linked list manipulation
 Personal Functions: Functions I believe will be useful later. Documented here.
-Libc functions	Additional functions	Bonus Functions	Personal Functions
-memset	ft_memalloc	ft_lstnew	ft_factorial
-bzero	ft_memdel	ft_lstdelone	ft_islower
-memcpy	ft_strnew	ft_lstdel	ft_isupper
-memccpy	ft_strdel	ft_lstadd	ft_lstaddend
-memmove	ft_strclr	ft_lstiter	ft_lstgetlast
-memchr	ft_striter	ft_lstmap	ft_lstislast
-memcmp	ft_striteri		ft_strclen
-strlen	ft_strmap		ft_strndup
-strdup	ft_strmapi		ft_strwcount
-strcpy	ft_strequ		ft_swap
-strncpy	ft_strnequ		
-strcat	ft_strsub		
-strlcat	ft_strjoin		
-strchr	ft_strtrim		
-strrchr	ft_strsplit		
-strstr	ft_itoa		
-strnstr	ft_putchar		
-strcmp	ft_putstr		
-strncmp	ft_putendl		
-atoi	ft_putnbr		
-isalpha	ft_putchar_fd		
-isdigit	ft_putstr_fd		
-isalnum	ft_putendl_fd		
-isascii	ft_putnbr_fd		
-isprint			
-toupper			
-tolower			
-Notes:
 
 Most of the the files and function names are namespaced with an ft in front. It stands for Fourty Two
 The project instructions require that we put all the source files in the root directory but for the sake of this Github repo, I separate them into sub folders.
@@ -188,7 +145,7 @@ The goal is to create a library called libft.a from the source files so I can la
 
 To create that library, after downloading/cloning this project, cd into the project, copy all the files from the sub folders to the root directory and finally, call make:
 
-git clone https://github.com/Makgora/libft.git
+git clone https://github.com/atastet/libft.git
 cd libft
 make
 You should see a libft.a file and some object files (.o).
