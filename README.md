@@ -165,5 +165,5 @@ That's it. Now run it using ./a.out
 Example usage
 This is a list of my projects that use Libft extensively:
 
-get_next_line
-Thx to R4meau and moannuo for this Readme.
+fillit
+Thx to Makgora for this Readme
