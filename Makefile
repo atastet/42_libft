@@ -6,7 +6,7 @@
 #    By: atastet <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/04/10 10:37:46 by atastet           #+#    #+#              #
-#    Updated: 2018/04/27 12:03:08 by atastet          ###   ########.fr        #
+#    Updated: 2018/05/18 14:48:56 by atastet          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,6 +18,7 @@ SRCS	=	ft_atoi.c	\
 			ft_putstr.c \
 			ft_putstr_fd.c \
 			ft_putendl.c \
+			ft_tablen.c	\
 			ft_putendl_fd.c \
 			ft_strcat.c	\
 			ft_strcmp.c	\
@@ -74,7 +75,9 @@ SRCS	=	ft_atoi.c	\
 			ft_factorial.c \
 			ft_strupcase.c \
 			ft_strlowcase.c \
-			ft_power.c
+			ft_power.c \
+			ft_puttab.c \
+			ft_tabdel.c
 
 OBJS	=	$(SRCS:.c=.o)
 

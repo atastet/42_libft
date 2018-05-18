@@ -1,19 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd.c                                        :+:      :+:    :+:   */
+/*   ft_tablen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: atastet <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/04/27 09:49:16 by atastet           #+#    #+#             */
-/*   Updated: 2018/05/18 13:28:03 by atastet          ###   ########.fr       */
+/*   Created: 2018/05/18 14:48:12 by atastet           #+#    #+#             */
+/*   Updated: 2018/05/18 14:48:44 by atastet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstadd(t_list **alst, t_list *new)
+int		ft_tablen(char **tab)
 {
-	new->next = *alst;
-	*alst = new;
+	int		i;
+
+	i = 0;
+	while (tab[i])
+		i++;
+	return (i);
 }

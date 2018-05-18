@@ -1,19 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd.c                                        :+:      :+:    :+:   */
+/*   ft_tabdel.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: atastet <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/04/27 09:49:16 by atastet           #+#    #+#             */
-/*   Updated: 2018/05/18 13:28:03 by atastet          ###   ########.fr       */
+/*   Created: 2018/05/18 13:27:39 by atastet           #+#    #+#             */
+/*   Updated: 2018/05/18 13:30:35 by atastet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstadd(t_list **alst, t_list *new)
+void	ft_tabdel(char ***tab)
 {
-	new->next = *alst;
-	*alst = new;
+	size_t	i;
+	char	**erase;
+
+	erase = NULL;
+	if (!tab || !*tab)
+		return ;
+	i = 0;
+	erase = *tab;
+	while (erase[i])
+	{
+		ft_strdel(&erase[i]);
+		i++;
+	}
+	free(*tab);
+	*tab = NULL;
 }
+
