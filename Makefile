@@ -7,6 +7,7 @@
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/04/10 10:37:46 by atastet           #+#    #+#              #
 #    Updated: 2018/05/18 14:48:56 by atastet          ###   ########.fr        #
+#    Updated: 2018/05/15 10:29:14 by atastet          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -77,7 +78,8 @@ SRCS	=	ft_atoi.c	\
 			ft_strlowcase.c \
 			ft_power.c \
 			ft_puttab.c \
-			ft_tabdel.c
+			ft_tabdel.c \
+			ft_putab.c
 
 OBJS	=	$(SRCS:.c=.o)
 

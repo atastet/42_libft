@@ -7,6 +7,7 @@
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/10 10:56:58 by atastet           #+#    #+#             */
 /*   Updated: 2018/05/18 14:49:21 by atastet          ###   ########.fr       */
+/*   Updated: 2018/05/15 10:30:29 by atastet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,4 +95,5 @@ void			ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 void			ft_tabdel(char ***tab);
 int				ft_tablen(char **tab);
+
 #endif
