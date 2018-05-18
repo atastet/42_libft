@@ -79,7 +79,7 @@ SRCS	=	ft_atoi.c	\
 			ft_power.c \
 			ft_puttab.c \
 			ft_tabdel.c \
-			ft_putab.c
+			ft_puttab.c
 
 OBJS	=	$(SRCS:.c=.o)
 
