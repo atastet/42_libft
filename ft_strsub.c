@@ -1,34 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strsun.c                                        :+:      :+:    :+:   */
+/*   ft_strsub.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: atastet <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: gdannay <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/04/20 17:05:36 by atastet           #+#    #+#             */
-/*   Updated: 2018/04/24 12:21:24 by atastet          ###   ########.fr       */
+/*   Created: 2017/11/13 11:07:02 by gdannay           #+#    #+#             */
+/*   Updated: 2017/11/29 13:47:04 by gdannay          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <string.h>
+#include <stdlib.h>
+#include <stdio.h>
 
 char	*ft_strsub(char const *s, unsigned int start, size_t len)
 {
-	char			*str;
-	unsigned int	i;
+	size_t	i;
+	char	*new;
 
 	i = 0;
 	if (s == NULL)
 		return (NULL);
-	i = 0;
-	if ((str = (char*)malloc(sizeof(*str) * (len + 1))) == NULL)
+	if ((new = (char *)malloc(sizeof(char) * (len - start + 1))) == NULL)
 		return (NULL);
-	while (i < len && s[start] != '\0')
+	while (len > start && i < len - start)
 	{
-		str[i] = s[start];
-		start++;
+		new[i] = s[start + i];
 		i++;
 	}
-	str[i] = '\0';
-	return (str);
+	new[i] = '\0';
+	return (new);
 }
